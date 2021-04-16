@@ -1,0 +1,266 @@
+body{
+	margin: 0 auto;
+}
+.galerija{
+	display: flex;
+  width: 100%;
+  padding: 0% 1%;
+  box-sizing: border-box;
+  height: 630px;
+  top: 0;
+  align-self: center;
+}
+.box {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 5px;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+  transition: 0.7s;
+}
+.box img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+}
+.box span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+/**************************************/
+.box_darbi{
+	background-color: #bb904f;
+	top:700px;
+	position:absolute;
+	left: 1.5%;
+	width: 400px;
+	height: 150px;
+	z-index: -1;
+  text-align: center;
+  transition: 0.8s all;
+}
+#box_darbi_intro{
+	font-family: "Lucida Console", Courier, monospace;
+	font-size:25px;
+	position:absolute;
+	top: 2%;
+  font-style: italic;
+  transition: 0.8s all;
+}
+#box_darbi_intro2{
+	font-size:18px;
+	position:absolute;
+  top:45%;
+  transition: 0.8s all;
+  left: 6%;
+}
+#koks{
+  top:700px;
+	position:absolute;
+	right: 1.5%;
+	width: 900px;
+  height: 150px;
+  z-index: -4;
+  transition: 0.8s all;
+}
+/* ZOOOOOOOOOOOM IN */
+.img-zoom-container {
+  position: absolute;
+  top: 905px;
+  left: 10%;
+  z-index: -1;
+  transition: 0.8s all;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #a8a8a8;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 500px;
+  height: 300px;
+  position:absolute;
+  left: 100%;
+  top: 0px;
+  z-index: -1;
+  margin-left: 20px;
+}
+.box_darbi_gitaras{
+	background-color: #ffcc80;
+	padding: 50px;
+	top: 905px;
+	position:absolute;
+  left:68%;
+  right: 0;
+	width: 200px;
+	height: 200px;
+  z-index: -1;
+  align-content: center;
+  justify-content: center;
+  transition: 0.8s all;
+}
+#box_darbi_gitaras1{
+	font-size:30px;
+	position:absolute;
+	z-index: 1;
+	top:30%;
+	font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  left: 10%;
+  right: 10%;
+}
+#box_darbi_gitaras2{
+	font-size:30px;
+	position:absolute;
+	z-index: 1;
+	top:10%;
+	font-style: italic;
+  left: 45%;
+  right: 15%;
+}
+
+@media (min-width: 1450px){
+  .img-zoom-container {
+    top: 925px;
+  }
+  .box_darbi_gitaras{
+    top: 925px;
+    left:70%;
+    width: 200px;
+	  height: 300px;
+  }
+  .img-zoom-result {
+    width: 500px;
+    height: 400px;
+    margin: 90px;
+    top:-90px;
+  }
+  #myimage{
+    width: 300px;
+    height: 400px;
+  }
+}
+@media (min-width: 1390px){
+  .img-zoom-container {
+    top: 925px;
+  }
+  .box_darbi_gitaras{
+    top: 925px;
+    left:70%;
+  }
+  .img-zoom-result {
+    width: 680px;
+    margin: 0 auto;
+    top: 0;
+  }
+  .box_darbi{
+    width: 1000px;
+  }
+  #box_darbi_intro{
+    left: 30%;
+  }
+  #box_darbi_intro2{
+    left: 27%;
+    top:30%;
+  }
+}
+@media (max-width: 1300px){
+  .img-zoom-container {
+    top: 925px;
+    left: 8%;
+  }
+  .box_darbi_gitaras{
+    top: 925px;
+    left:70%;
+  }
+}
+@media (max-width: 1190px){
+  .img-zoom-container {
+    top: 920px;
+    left: 4%;
+  }
+  .box_darbi_gitaras{
+    top: 920px;
+    left:68%;
+    width: 140px;
+  }
+}
+@media (max-width: 1145px){
+  .img-zoom-container {
+    top: 925px;
+    left: 2%;
+  }
+  .box_darbi_gitaras{
+    top: 925px;
+    left:70%;
+    width: 130px;
+  }
+  .img-zoom-result {
+    width: 400px;
+  }
+}
+@media (max-width: 1100px){
+  .img-zoom-container {
+    left: 1.5%;
+  }
+  .box_darbi_gitaras{
+    left:70%;
+    width: 120px;
+  }
+  .img-zoom-result {
+    width: 300px;
+  }
+}
+@media (max-width: 800px){
+  .box_darbi_gitaras{
+    left:8%;
+    width: 350px;
+    top: 1250px;
+    height: 50px;
+  }
+  .img-zoom-result {
+    width: 300px;
+  }
+}
+@media (max-width: 650px){
+  .box_darbi_gitaras{
+    left:8%;
+    width: 300px;
+    top: 1270px;
+    height: 40px;
+  }
+  .img-zoom-result {
+    width: 230px;
+  }
+  #box_darbi_gitaras2{
+    top: -5%;
+  }
+}
+@media (max-width: 415px){
+  .box_darbi{
+    width: 300px;
+  }
+  .img-zoom-result {
+    width: 130px;
+  }
+  .box_darbi_gitaras{
+    top: 1300px;
+    left:10%;
+    width: 200px;
+  }
+  #box_darbi_gitaras2{
+    top: -5%;
+  }
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Page </title>
+<meta charset = "UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel = "stylesheet" type = "text/css" href = "../CSS/darbi.css" />
+<link rel = "stylesheet" type = "text/css" href = "../CSS/navBar.css" />
+<link rel = "stylesheet" type = "text/css" href = "../CSS/footer.css" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script>
+</head>
+
+<body>
+<div id ="menu">
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fa fa-bars"></i>
+		</label>
+		<ul id="nav-menu">
+			<li><a href="../index.html" >HOME</a></li>
+			<li><a href="par_mani.html" class="big">ABOUT</a></li>
+			<li><a href="#" class="active">GALLERY</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="galerija">
+	<div class="box">	
+		<img src="../pics/darbi/5.jpeg">
+		<span>CSS</span>
+	</div>
+	<div class="box">
+		<img src="../pics/darbi/6.jpeg">
+		<span>Image</span>
+	</div>
+	<div class="box">
+		<img src="../pics/darbi/7.jpeg"> 
+		<span>Hover</span>
+	</div>
+	<div class="box">	
+		<img src="../pics/darbi/5.jpeg">
+		<span>CSS</span>
+	</div>
+	<div class="box">
+		<img src="../pics/darbi/6.jpeg">
+		<span>Image</span>
+	</div>
+</div>
+
+ <div class="box_darbi">
+	<p id="box_darbi_intro"> HERE IS ANOTHER BOX FOR TEXT... </p>
+	<p id="box_darbi_intro2">Isn't it beautiful? Art from old wood desks.	</p> 
+</div>
+<img id="koks" src="../pics/darbi/rr.jpg">
+<!--ZOOOM IN PHOTOS-->
+	<!--- FIRST PHOTO - LEFT -->
+<div class="img-zoom-container">
+  <img id="myimage" src="../pics/darbi/2.jpeg" width="200" height="300">
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+	<!-- BOX -->
+<div class="box_darbi_gitaras">
+	<p id="box_darbi_gitaras1"> HERE IS SOME JS ZOOM </p>
+	<p id="box_darbi_gitaras2">...</p> 
+</div>
+<!-- FOOTER -->
+<div class="footer_Darbi">
+<p> MY CONTACTS </p>
+<div class="media">
+	<ul>
+		<li><a href="https://www.facebook.com/astrida.danilevica"target="_blank"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://www.instagram.com/gasteroiids/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+	</ul>
+</div>
+</div>
+
+<script src="../JS/zoomIn.js"></script>
+</body>
+</html>

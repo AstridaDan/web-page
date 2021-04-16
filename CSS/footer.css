@@ -1,0 +1,128 @@
+.footer1 {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  position: relative;
+  bottom: 0%;
+  letter-spacing: 3px;
+  font-size:15px;
+  align-content: center;
+}
+.footer2 {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  top:1900px;
+  position: relative;
+  bottom: 0;
+  letter-spacing: 3px;
+  font-size:15px;
+}
+.footer_Cont {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  top:780px;
+  position: relative;
+  bottom: 0;
+  letter-spacing: 3px;
+  font-size:15px;
+}
+.footer_Darbi {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  top:800px;
+  position: relative;
+  bottom: 0;
+  font-family: "Lucida Console", Courier, monospace;
+  letter-spacing: 3px;
+  font-size:15px;
+}
+  /*SOCIAL MEDIA BUTTONS*/
+.media ul{
+  position:absolute;
+  left:40%; 
+  top: 50%;
+  padding:0;
+  margin:0;
+  transform:translate(-50%, -50%);
+  display:flex;
+  z-index: 3;
+}
+.media ul li {
+  list-style: none;
+  margin: 0 15px; /*space between icons */
+}
+.media ul li .fa{
+  font-size: 25px;
+  line-height: 43px;
+  transition: .6s;
+  color: #000;
+}
+.media ul li .fa:hover{
+  transform: translate(0, -8px);
+}
+
+@media (min-width: 1190px){
+  .footer1{
+    top: 1350px;
+  } 
+} 
+@media (max-width: 1300px){
+  .footer1{
+    top: 1450px;
+    bottom: 0;
+  }
+  .footer1 p{
+    right: -60%;
+  }
+  .media ul{
+    left:30%;
+  }
+}
+@media (max-width: 1080px){
+  .footer1{
+		top: 1550px;
+  }
+}
+@media (max-width: 869px){
+  .footer1{
+    top: 1350px;
+  }
+  .footer2 {
+  top: 1600px;
+  }
+}
+@media (max-width: 620px){
+  .footer1{
+    top: 1100px;
+  }
+  .media ul{
+    left:20%;
+  }
+}
+@media (min-width: 1400px){
+  .footer1{
+    top: 1550px;
+  }
+}
+@media (max-width: 650px){
+  .footer2{
+    top: 1200px;
+  }
+}
+@media (min-width: 1390px){
+  .footer2{
+    top: 2250px;
+  }
+}
+@media (max-width: 800px){
+  .footer_Darbi{
+    top: 900px;
+  }
+}

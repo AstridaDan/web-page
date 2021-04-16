@@ -1,0 +1,330 @@
+body{
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #ffffff;
+}
+#hey{
+	position: absolute; /*moves along with page scrolling */
+	top:750px;
+	left: 150px;
+	font-weight:500;
+	text-align: center;
+	z-index: -1;
+	transition: 0.8s all;
+}
+#ievads{
+	position: absolute;
+	top:750px;
+	right: 150px;
+	font-weight:100;
+	text-align: center;
+	font-style: italic;
+	z-index: -1;
+	transition: 0.8s all;
+}
+.foto1{
+	position:absolute;
+	top: 1000px;
+	left: 750px;
+	width: 470px;
+    height: 500px;
+	z-index: -2; /*TAS LAUJ BILDEM BUT VIENAI UZ OTRAS, kā arī zem menu */
+	transition: 0.8s all;
+}
+.foto2{
+	position:absolute;
+	top: 900px;
+	left: 115px;
+	width: 650px;
+    height: 500px;
+	z-index: -1;
+	transition: 0.8s all;
+}
+#vairak{
+	position:absolute;
+	top: 1425px;
+	left: 500px;
+	font-family: "Lucida Console", Courier, monospace;
+	color: black;
+	letter-spacing: 3px; 
+	z-index: -1;
+	transition: 0.8s all;
+}
+/* GREY BOX*/
+.box{
+	background-color: #e6e6e6;
+	padding: 50px;
+	margin: 20px;
+	top:1580px;
+	position:absolute;
+	right: 280px;
+	width: 2000px;
+    height: 200px;
+	z-index: -2
+}
+#dedzinasana{
+	top: 1600px;
+	position:absolute;
+	right: 120px;
+	z-index: -1;
+	font-weight:100; 
+	text-decoration: none;
+	color:black;
+	transition: 0.8s all;
+}
+.roka{
+	top:1625px;
+	position: absolute;
+	width: 250px;
+    height: 150px;
+	left: 300px;
+	z-index: -1;
+	transition: 0.8s all;
+}
+.roka2{
+	top:1625px;
+	position: absolute;
+	width: 250px;
+    height: 150px;
+	left: 670px;
+	z-index: -1;
+	transition: 0.8s all;
+}
+@media (min-width: 1400px){
+	#hey{
+		top: 950px;
+		left: 20%;
+		font-size: 40px;
+	}
+	#ievads{
+		top: 1050px;
+		font-size: 20px;
+		right: 300px;
+	}
+	.foto1{
+		left: 50%;
+		width: 570px;
+		top: 1300px;
+	}
+	.foto2{
+		left: 20%;
+		width: 700px;
+		height: 500px;
+		top: 1200px;
+	}
+	#vairak{
+		top: 1750px;
+		left: 35%;
+	}
+	.box{
+		top:1950px;
+		right: 19%;
+	}
+	.roka{
+		top:2000px;
+		width: 300px;
+		height: 200px;
+		left: 25%;
+	}
+	.roka2{
+		top:2000px;
+		width: 300px;
+		height: 200px;
+		left: 45%;
+	}
+	#dedzinasana{
+		top: 1900px;
+		right: 24%;
+		font-size: 30px;
+	}
+}
+@media (max-width: 1300px){
+	.foto1{
+		left: 650px ;
+		width: 370px;
+		height: 400px;
+		position: absolute;
+	}
+	.foto2{
+		left: 115px;
+		width: 600px;
+		height: 450px;
+		position: absolute;
+	}
+	#vairak{
+		top: 1370px;
+		left: 420px;
+	}
+	#hey{
+		top: 650px
+	}
+	.roka{
+		left: 200px;
+	}
+	.roka2{
+		left: 570px;
+	}
+}
+@media (max-width: 1190px){
+	.roka{
+		left: 115px;
+	}
+	.roka2{
+		left: 450px;
+	}
+}
+@media (max-width: 1080px){
+	#hey{
+		text-align: center;	
+		top: 600px
+	}
+	#ievads{
+		text-align: center;
+		top: 680px;
+	}
+	.foto2{
+		left: 115px;
+		width: 600px;
+		height: 450px;
+		top: 800px;
+	}
+	.foto1{
+		left: 400px ;
+		width: 370px;
+		height: 400px;
+		top: 1100px;
+	}
+	#vairak{
+		top: 1280px;
+		left: 200px;
+	}
+	#dedzinasana{
+		top: 1530px;
+	}
+}
+@media (max-width: 869px){
+	#hey{
+		top: 450px;
+		left: 70px;
+	}
+	#ievads{
+		top: 520px;
+		right: 70px;
+	}
+	.foto2{
+		left: 70px;
+		width: 500px;
+		height: 350px;
+		top: 650px;
+	}
+	.foto1{
+		left: 250px ;
+		width: 350px;
+		height: 300px;
+		top: 960px;
+	}
+	#vairak{
+		top: 1100px;
+		left: 70px;
+		font-size: 13px;
+	}
+	#dedzinasana{
+		top: 1320px;
+	}
+	.roka{
+		left: 70px;
+		top:1430px;
+	}
+	.roka2{
+		left: 350px;
+		top:1430px;
+	}
+	.box{
+		top:1370px;
+		right: 100px;
+	}
+}
+@media screen and (max-width: 620px) {
+	#hey{
+		top: 270px;
+		left: 30px;
+	}
+	#ievads{
+		top: 370px;
+		left: 30px;
+		right: 30px;
+	}
+	.foto2{
+		left: 30px;
+		width: 350px;
+		height: 200px;
+		top: 550px;
+	}
+	.foto1{
+		left: 200px ;
+		width: 250px;
+		height: 200px;
+		top: 670px;
+	}
+	#vairak{
+		top: 800px;
+		left: 30px;
+	}
+	#dedzinasana{
+		top: 950px;
+	}
+	.roka{
+		left: 30px;
+		top:1050px;
+		width: 200px;
+    	height: 100px;
+	}
+	.roka2{
+		left: 250px;
+		top:1050px;;
+		width: 200px;
+    	height: 100px;
+	}
+	.box{
+		top:960px;
+		right: 100px;
+	}
+}
+@media (max-width: 415px) {
+	#hey{
+		top: 230px;
+		left: 3%;
+	}
+	.foto2{
+		left: 30px;
+		width: 300px;
+		height: 150px;
+	}
+	.foto1{
+		left: 40%;
+		width: 200px;
+		height: 160px;
+	}
+	#vairak{
+		top: 770px;
+		left: 1.5%;
+	}
+	#dedzinasana{
+		top: 930px;
+	}
+	.roka{
+		left: 3%;
+		width: 150px;
+    	height: 90px;
+	}
+	.roka2{
+		left: 53%;
+		width: 150px;
+    	height: 90px;
+	}
+	.box{
+		top:960px;
+		right: 100px;
+	}
+}
